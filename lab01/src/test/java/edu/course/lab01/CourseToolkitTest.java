@@ -1,9 +1,8 @@
 package edu.course.lab01;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Test;
 
 class CourseToolkitTest {
 
@@ -17,6 +16,12 @@ class CourseToolkitTest {
     @Test
     void returnsFalseForOddNumber() {
         boolean result = CourseToolkit.isEven(7);
+
+        assertFalse(result);
+    }
+    @Test
+    void returns_0_ForOddNumber() {
+        boolean result = CourseToolkit.isEven(0);
 
         assertFalse(result);
     }
