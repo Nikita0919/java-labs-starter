@@ -6,8 +6,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class Lab03Test {
 
-    // Тесты базовой части: скидки.
-
     @Test
     void noDiscountReturnsOriginalPrice() {
         DiscountPolicy policy = new NoDiscount();

@@ -1,6 +1,6 @@
 package edu.course.lab03;
 
-// Базовая часть: интерфейс и две реализации политики скидок.
+// Базовая часть: интерфейс и две реализации политики скидок
 interface DiscountPolicy {
     double apply(double price);
 }
@@ -68,7 +68,7 @@ public class PriceCalculator {
 }
 
 
-// Часть по инженерии систем ИИ: интерфейс и две стратегии нормализации.
+// Часть по инженерии систем ИИ: интерфейс и две стратегии нормализации
 interface NormalizationStrategy {
     double[] normalize(double[] values);
 }
@@ -82,7 +82,7 @@ class MinMaxNormalization implements NormalizationStrategy {
         double min = values[0];
         double max = values[0];
 
-        // минимум и максимум.
+        // минимум и максимум
         for (int i = 1; i < values.length; i++) {
             if (values[i] < min) {
                 min = values[i];
@@ -96,7 +96,7 @@ class MinMaxNormalization implements NormalizationStrategy {
         double[] result = new double[values.length];
 
         if (max == min) {
-            return result; // Для одинаковых значений возвращаем массив из нулей.
+            return result; // Для одинаковых значений возвращаем массив из нулей
         }
 
         for (int i = 0; i < values.length; i++) {
